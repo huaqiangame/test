@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GamePlant.iml" filepath="$PROJECT_DIR$/GamePlant.iml" />
+      <module fileurl="file://E:/sourceCode/game_src/naruto.battle/naruto.battle.iml" filepath="E:/sourceCode/game_src/naruto.battle/naruto.battle.iml" />
+      <module fileurl="file://E:/sourceCode/game_ui/naruto.exui/naruto.exui.iml" filepath="E:/sourceCode/game_ui/naruto.exui/naruto.exui.iml" />
+      <module fileurl="file://E:/sourceCode/game_src/naruto.map/naruto.map.iml" filepath="E:/sourceCode/game_src/naruto.map/naruto.map.iml" />
+      <module fileurl="file://E:/sourceCode/game_src/naruto.player/naruto.player.iml" filepath="E:/sourceCode/game_src/naruto.player/naruto.player.iml" />
+      <module fileurl="file://E:/sourceCode/game_src/naruto.prewar/naruto.prewar.iml" filepath="E:/sourceCode/game_src/naruto.prewar/naruto.prewar.iml" />
+      <module fileurl="file://E:/sourceCode/game_ui/naruto.ui/naruto.ui.iml" filepath="E:/sourceCode/game_ui/naruto.ui/naruto.ui.iml" />
+    </modules>
+  </component>
+</project>
