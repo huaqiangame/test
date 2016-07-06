@@ -1,0 +1,16 @@
+﻿【使用注意事项】
+1、保证 naruto.ui 工程的编译参数里添加了这一行：
+-include-libraries ${DOCUMENTS}\naruto.ui\libs\NarutoComponents.swc
+
+2、在上一目录的 mxi 文件夹下，找到 NarutoComponentsExtension.zxp 文件，使用“Adobe Extension Manager CS6.exe”打开并安装；
+
+3、在 Flash CS6 里，按 Ctrl+F7 打开组件面板，就会看到“Naruto Components”了；
+
+4、你编辑好的 fla，要发布为 swc 和 swf 。其中 swc 是给写代码时用的（设置为外部引用），swf 是放在 bin-debug 目录里，运行时加载用的；
+
+
+
+
+【服务器上的更新信息】
+\\10.12.23.11\toolres
+http://toolres.naruto.qq.com/

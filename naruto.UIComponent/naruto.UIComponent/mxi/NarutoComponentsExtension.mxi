@@ -1,0 +1,79 @@
+﻿<macromedia-extension name="火影通用资源库" version="1.20.0" requires-restart="true" type="command">
+	<author name="YBoyJiang" />
+	<products>
+		<product name="flash" version="11" primary="true" />
+	</products>
+	<description>
+		<![CDATA[
+			打开组件面板：Ctrl + F7 或 “窗口->组件”。
+			有问题请联系RTX：YBoyJiang
+		]]>
+	</description>
+	<ui-access>
+		<![CDATA[
+			
+		]]>
+	</ui-access>
+	<license-agreement>
+		<![CDATA[
+			Power by 火影项目组
+		]]>
+	</license-agreement>
+	<files>
+	
+	
+	
+	
+	
+	
+	
+	
+		<file source="Components/Naruto Components/AvatarBackground_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_2.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_3.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_4.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_5.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_6.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_7.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_8.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_9.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_10.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_11.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_12.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Background_13.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/ButtonClose.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/ButtonLittle.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/ButtonNormalBlue.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/ButtonNormalYellow.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/ButtonNormalOrange.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/CheckBox_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/ComboBox_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/ComboBoxButton.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Icon_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Icon_2.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Icon_3.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Icon_4.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Icon_5.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Icon_VipLevel.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/Info_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/NarutoComponents.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/NumericButton.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/NumericStepper_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/PageButton.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/PageSwitcher_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/ScrollBar_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/ScrollBar_2.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/ScrollBar_3.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/TabBar_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/TabBarButton_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/TitleBar_1.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/TitleBar_2.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		<file source="Components/Naruto Components/TitleBar_3.swc" destination="$flash/Components/Naruto Components" file-type="ordinary" />
+		
+		<file source="Commands/【火影】导出火影组件.jsfl" destination="$flash/Commands/" file-type="ordinary" />
+		<file source="Commands/【火影】刷新组件.jsfl" destination="$flash/Commands/" file-type="ordinary" />
+		<file source="NarutoComponents/NarutoComponnentsJsfl.jsfl" destination="$flash/NarutoComponents/" file-type="ordinary" />
+		<file source="NarutoComponentsExtension.mxi" destination="$flash/NarutoComponents/" file-type="ordinary" />
+	</files>
+</macromedia-extension>
