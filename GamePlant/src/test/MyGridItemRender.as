@@ -13,12 +13,22 @@ package test
 	{
 		public function MyGridItemRender(skin:DisplayObject = null)
 		{
-			super(new McGridRow());
+			super(skin);
 		}
 
 		override public function set data(value:Object):void
 		{
 			super.data = value;
+			var str:String = value.level;
+			str = str.substr(2);
+			if (int(str) <= 3)
+			{
+				view.bg.gotoAndStop(str);
+			}
+			else
+			{
+				view.bg.gotoAndStop(1);
+			}
 			view.txtName.text = value.name;
 			view.txtLv.text = value.level;
 			view.txtFamily.text = value.family;
@@ -29,10 +39,12 @@ package test
 		override public function set selected(value:Boolean):void
 		{
 			super.selected = value;
-			if(value){
-				view.filters=[new GlowFilter()];
-			}else{
-				view.filters=null;
+			if (value)
+			{
+				view.filters = [new GlowFilter()];
+			} else
+			{
+				view.filters = null;
 			}
 		}
 

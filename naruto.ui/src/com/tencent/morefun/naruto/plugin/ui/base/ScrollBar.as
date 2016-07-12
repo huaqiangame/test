@@ -101,7 +101,6 @@ package com.tencent.morefun.naruto.plugin.ui.base
 			if(m_up)
 			{
 				addChild(m_up);
-				
 			}
 			if(m_down)
 			{
@@ -110,7 +109,7 @@ package com.tencent.morefun.naruto.plugin.ui.base
 			addChild(m_thumb);
 			
 			m_scrollArea = srcollArea;
-			
+
 			m_thumbHeight = m_thumb.height;
 			m_thumbWidth = m_thumb.width;
 			
@@ -538,7 +537,10 @@ package com.tencent.morefun.naruto.plugin.ui.base
 		{	
 			if(m_direction == DirectionDef.VERTICAL)
 			{
-				if(m_fixThumbHeight){m_thumbHeight = (m_pageScrollValue / (m_maxScrollValue - m_minScrollValue + m_pageScrollValue)  ) * m_scrolAreaRec.height;}
+				if(m_fixThumbHeight)
+				{
+					m_thumbHeight = (m_pageScrollValue / (m_maxScrollValue - m_minScrollValue + m_pageScrollValue)  ) * m_scrolAreaRec.height;
+				}
 				if(m_thumbHeight <= 0)
 				{
 					m_thumbHeight = m_minThumSize;

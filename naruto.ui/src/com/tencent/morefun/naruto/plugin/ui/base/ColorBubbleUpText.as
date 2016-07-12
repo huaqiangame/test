@@ -50,7 +50,7 @@ package com.tencent.morefun.naruto.plugin.ui.base
 			
 			textFormat = new TextFormat();
 			textFormat.color = m_color;
-			textFormat.font = I18n.lang("as_ui_1451031579_6139");
+//			textFormat.font = I18n.lang("as_ui_1451031579_6139");
 			textFormat.size = m_size;
 			textFormat.bold = m_bold;
 			textField = new TextField();

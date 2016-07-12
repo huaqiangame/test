@@ -1,5 +1,6 @@
 package com.tencent.morefun.naruto.plugin.ui.base
-{
+{
+
 	import com.tencent.morefun.naruto.plugin.ui.base.event.ScrollBarEvent;
 	import com.tencent.morefun.naruto.plugin.ui.base.event.ScrollContentEvent;
 	import com.tencent.morefun.naruto.plugin.ui.base.interfaces.IScrollContent;

@@ -24,7 +24,7 @@ package test.testDropDownList
 			var bg:Sprite=new Sprite();
 			bg.graphics.clear();
 			bg.graphics.beginFill(0xff0000);
-			bg.graphics.drawRect(0,0,150,200);
+			bg.graphics.drawRect(0,0,150,150);
 			bg.graphics.endFill();
 
 			dropDownList = new DropDownList(5, MyDropDownItemRender, null, new McScrollSkin(), bg, datas[0]);

@@ -8,21 +8,35 @@ package
 	import com.tencent.morefun.naruto.plugin.ui.util.TimerProvider;
 
 	import flash.display.DisplayObject;
+	import flash.display.Loader;
 	import flash.display.Sprite;
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
+	import flash.net.URLRequest;
+	import flash.system.ApplicationDomain;
+	import flash.system.LoaderContext;
 	import flash.text.TextField;
 
 	import test.testAnyTextIntAnim.AppAnyTextIntAnim;
 	import test.testAnyTextRandomIntAnim.AppAnyTextRandomIntAnim;
 	import test.testBaseButton.AppBaseButton;
 	import test.testBitmapText.AppBitmapText;
+	import test.testColorBubbleUpText.AppColorBubbleUpText;
+	import test.testDirectionGrid.AppDirectionGrid;
 	import test.testDropDownList.AppDropDownList;
+	import test.testGrid.AppGrid;
+	import test.testMyScrollContent.AppMyScrollContent;
 	import test.testNumberStepper.AppNumberStepper;
 	import test.testProgressbar.AppProgressBar;
 	import test.testScrollBar.AppScrollBar;
+	import test.testScrollText.AppScrollText;
+	import test.testTabBar.AppTabBar;
+	import test.testTextArea.AppTextArea;
+	import test.testTree.AppTree;
+
+	import test2.ExAppButton;
 
 	public class GameDemo extends Sprite
 	{
@@ -33,15 +47,28 @@ package
 		private var _leftBtn:Sprite;
 		private var _rightBtn:Sprite;
 		private var _hBox:HBox;
+		private var _currentSprite:DisplayObject;
 
 		public function GameDemo()
+		{
+			var loader:Loader = new Loader();
+			var loadCtx:LoaderContext = new LoaderContext(false, ApplicationDomain.currentDomain);
+			loader.load(new URLRequest("NarutoComponents.swf?time=" + new Date().time), loadCtx);
+			loader.contentLoaderInfo.addEventListener(Event.INIT, function (ev:Event):void
+			{
+				loader.contentLoaderInfo.removeEventListener(Event.INIT, arguments.callee);
+				preLoader();
+			});
+		}
+
+		private function preLoader():void
 		{
 			if (stage)
 			{
 				init();
 			} else
 			{
-				addEventListener(Event.ADDED_TO_STAGE, function ():void
+				addEventListener(Event.ADDED_TO_STAGE, function (ev:Event):void
 				{
 					removeEventListener(Event.ADDED_TO_STAGE, arguments.callee);
 					init();
@@ -56,8 +83,10 @@ package
 
 			TimerProvider.initliazed(stage);
 			LayerManager.singleton.initialize(stage);
+			LayerManager.singleton.createLayer("dropDownList", 0);
 
-			_sampleArr.push(AppNumberStepper, AppDropDownList, AppProgressBar, AppScrollBar, AppAnyTextIntAnim, AppAnyTextRandomIntAnim, AppBaseButton, AppBitmapText);
+
+			_sampleArr.push(ExAppButton, AppDropDownList, AppTabBar, AppMyScrollContent, AppTree, AppColorBubbleUpText, AppTextArea, AppScrollText, AppDirectionGrid, AppGrid, AppScrollBar, AppNumberStepper, AppProgressBar, AppAnyTextIntAnim, AppAnyTextRandomIntAnim, AppBaseButton, AppBitmapText);
 
 			_title = new TextField();
 			_title.autoSize = "left";
@@ -85,6 +114,8 @@ package
 
 			stage.addEventListener(Event.RESIZE, onResize);
 			onResize(null);
+
+			
 		}
 
 		private function onClick(event:MouseEvent):void
@@ -115,16 +146,29 @@ package
 			_title.x = (stage.stageWidth - _title.textWidth) * .5;
 			_hBox.x = (stage.stageWidth - _hBox.width) * .5;
 			_hBox.y = stage.stageHeight - _hBox.height;
+
+			if (_currentSprite)
+			{
+				center(_currentSprite);
+			}
 		}
+
 
 		private function addSample(sampleClass:Class):void
 		{
 			_container.removeChildren(0);
 
 			var sample:Sprite = new sampleClass();
-			_container.addChild(sample);
 			updateTitle(sampleClass.TITLE);
-			center(sample);
+
+			if (sample.width > 0 && sample.height > 0)
+			{
+				_currentSprite = _container.addChild(sample);
+				center(sample);
+			} else
+			{
+				_currentSprite = _container.addChild(sample);
+			}
 		}
 
 		private function updateTitle(value:String):void

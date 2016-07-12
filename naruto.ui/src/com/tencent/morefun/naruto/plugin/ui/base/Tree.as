@@ -1,5 +1,6 @@
 package com.tencent.morefun.naruto.plugin.ui.base
-{
+{
+
 	import com.tencent.morefun.naruto.plugin.ui.base.event.TreeEvent;
 	import com.tencent.morefun.naruto.plugin.ui.util.ExDictionary;
 	import com.tencent.morefun.naruto.plugin.ui.util.ObjectPool;

@@ -224,17 +224,18 @@ package com.tencent.morefun.naruto.plugin.ui.base
 				m_listWindow.y = m_listBackground.y + (m_listBackground.height - m_listWindow.height) / 2;
 				
 				stagePoint = new Point(m_listBackground.x, m_listBackground.y);
-				localPoint = LayerManager.singleton.findLayerByName(LayerDef.DROP_DOWN_LIST).globalToLocal(stagePoint);
+				localPoint = LayerManager.singleton.findLayerByName("dropDownList").globalToLocal(stagePoint);
 				m_listBackground.x = localPoint.x;
 				m_listBackground.y = localPoint.y;
-				
+
 				stagePoint = new Point(m_listWindow.x, m_listWindow.y);
-				localPoint = LayerManager.singleton.findLayerByName(LayerDef.DROP_DOWN_LIST).globalToLocal(stagePoint);
+				localPoint = LayerManager.singleton.findLayerByName("dropDownList").globalToLocal(stagePoint);
 				m_listWindow.x = localPoint.x;
 				m_listWindow.y = localPoint.y;
-				
-				LayerManager.singleton.addItemToLayer(m_listBackground, LayerDef.DROP_DOWN_LIST);
-				LayerManager.singleton.addItemToLayer(m_listWindow, LayerDef.DROP_DOWN_LIST);
+
+				LayerManager.singleton.addItemToLayer(m_listBackground, "dropDownList");
+				LayerManager.singleton.addItemToLayer(m_listWindow, "dropDownList");
+
 				stage.addEventListener(MouseEvent.CLICK, onStageMouseClick);
 			}
 			else
